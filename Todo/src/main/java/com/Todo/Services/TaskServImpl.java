@@ -13,7 +13,7 @@ import com.Todo.Repository.TaskRepo;
 public class TaskServImpl implements TaskService {
 
 	@Autowired
-		TaskRepo tr;
+	private	TaskRepo tr;
 	@Override
 	public Tasks createNewTask(Tasks task) {
 		// TODO Auto-generated method stub
@@ -64,7 +64,5 @@ public class TaskServImpl implements TaskService {
 		// TODO Auto-generated method stub
 		return tr.findByTask(task);
 	}
-
 	
-
 }
